@@ -2648,7 +2648,7 @@ class API
                 } elseif ($type === "executionReport") {
                     $report = $this->executionHandler($json);
                     if ($this->info['executionCallback']) {
-                        $this->info['executionCallback']($this, $report);
+                        $this->info['executionCallback']($this, $json);
                     }
                 }
             });
